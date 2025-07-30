@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+
+<head>
+    <!-- Open Graph -->
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta property="og:title" content="Fluid – Sites web sur‑mesure par un vrai dev, au meilleur prix" />
+    <meta property="og:description" content="Sites rapides, SEO-friendly et faits main pour PME & particuliers." />
+    <meta property="og:url" content="https://<ton-domaine>" />
+    <meta property="og:image" content="https://<ton-domaine>/static/og-fluid.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind -->
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="
+https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="relative w-full min-h-screen overflow-hidden">
+        <!-- Blob au centre/droite -->
+        <div
+            class="absolute top-[150px] right-0 w-[400px] h-[400px] -z-10 bg-[url('./assets/center-blob.svg')] bg-no-repeat bg-contain bg-right opacity-80">
+        </div>
+
+        <header>
+            <nav id="desktop" class="hidden lg:flex items-center px-12">
+                <img src="./assets/logo.webp" alt="Logo de notre marque Fluid" class="w-32 relative bottom-5">
+                <div class="flex mx-auto">
+
+                    <ul class="flex gap-24 mb-10 mx-auto text-xl font-sora">
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="#tarifs" class="text-sky-500">Tarif</a></li>
+                        <li><a href="contact.html">Contactez-nous</a></li>
+                </div>
+                <a href="#clientspace" class="rounded-lg bg-sky-400 shadow p-2 text-2xl mb-8 text-left">
+                    Espace Client
+                </a>
+            </nav>
+
+
+            <nav id="mobile" class="flex lg:hidden justify-between items-center px-4">
+                <img src="./assets/logo.webp" alt="Logo de notre marque" class="w-48 relative mx-auto bottom-12">
+
+                <!-- Icône burger -->
+                <i id="burger" class="material-icons relative bottom-12 mr-5 cursor-pointer"
+                    style="font-size: 2rem;">menu</i>
+            </nav>
+
+            <!-- Menu mobile caché par défaut -->
+            <div id="mobileMenu"
+                class="hidden text-marine text-2xl pb-2 flex flex-col items-center gap-4 relative bottom-24 lg:hidden">
+                <a href="index.html">Accueil</a>
+                <a href="#tarifs" class="text-sky-500">Tarif</a>
+                <a href="./contact.html">Contactez-nous</a>
+                <a href="#clientspace" class="bg-sky text-white w-48 text-center p-2 rounded">Espace Client</a>
+            </div>
+
+
+        </header>
+
+        <main>
+
+            <div class="textprincipale flex flex-col w-75 mx-auto lg:w-[100%] pb-6 leading-loose">
+                <h2 class="flex mx-auto text-4xl uppercase font-sora text-marine font-bold">Tarifs</h2>
+                <p class="text-xl font-monserrat mx-auto">
+                    Des offres transparent pour la création de votre site web.
+                </p>
+            </div>
+            <!-- <img class="" src="./assets/Wallet-bro.svg" alt="" srcset=""> -->
+
+            <section class="card flex lg:flex-row flex-col pb-12 lg:pb-0">
+                <div class="allcard flex lg:flex-row flex-col mx-auto gap-24">
+                    <div
+                        class="leftcard bg-lightc shadow lg:w-75 w-85 h-130 lg:h-120 text-center rounded-lg border border-neutral-200 items-center flex flex-col">
+                        <h2 class="text-3xl font-bold font-sora pt-8 text-marine">Essentielle</h2>
+                        <h2 class="text-2xl font-bold font-sora pt-2 text-sky">15€/mois</h2>
+
+                        <p class="mt-[10%] text-xl leading-loose font-light">
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Site one-page <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Design personnalisé <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span>Site responsive <br>
+                            <br>
+                            <br>
+                        </p>
+
+                        <button type="button"
+                            class="rounded-lg w-3/4 mt-auto border border-neutral-700 text-black text-2xl font-sora p-2 mb-15">Choisir</button>
+                    </div>
+                    <div
+                        class="middlecard bg-lightc relative shadow w-85 h-130 lg:w-75 lg:h-120 text-center rounded-lg border-3 border-sky-500 items-center flex flex-col">
+                        <div
+                            class="absolute top-0 bg-sky-400 text-white text-xl font-bold px-2 py-1 rounded-0 w-[100%] shadow">
+                            Meilleure offre
+                        </div>
+                        <h2 class="text-3xl font-bold font-sora pt-8 text-marine">Business</h2>
+                        <h2 class="text-2xl font-bold font-sora pt-2 text-sky">25€/mois</h2>
+
+                        <p class="mt-[10%] text-xl leading-loose font-light">
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Jusqu'a 5 page<br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Design personnalisé <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Priorité de support <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Site responsive <br>
+                        </p>
+
+                        <button type="button"
+                            class="border-3 border-sky-500 rounded-lg w-3/4 mt-auto text-white text-2xl font-sora p-2 mb-15"><span
+                                class="text-sky-500">Choisir</span></button>
+                    </div>
+
+                    <div
+                        class="rightcard w-85 h-130 transition-ease groupe duration-300 bg-lightc shadow lg:w-75 lg:h-120 text-center rounded-lg border border-neutral-200 items-center flex flex-col">
+                        <h2 class="text-3xl font-bold font-sora pt-8 text-marine">Entreprise</h2>
+                        <h2 class="text-2xl font-bold font-sora pt-2 text-sky">45€/mois</h2>
+
+                        <p class="mt-[10%] text-xl leading-loose font-light">
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Jusqu'à 10 page <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Design personnalisé <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Site responsive <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Haute priorité de support <br>
+                            <span class="material-icons relative top-1 text-sky">
+                                check
+                            </span> Base de donnée <br>
+                        </p>
+
+                        <button type="button"
+                            class=" border border-neutral-700 text-black rounded-lg w-3/4 mt-auto text-2xl font-sora p-2 mb-15">Choisir</button>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+</body>
+
+</html>

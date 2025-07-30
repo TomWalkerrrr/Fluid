@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="fr">
+
+<head>
+    <!-- Open Graph -->
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta property="og:title" content="Fluid – Sites web sur‑mesure par un vrai dev, au meilleur prix" />
+    <meta property="og:description" content="Sites rapides, SEO-friendly et faits main pour PME & particuliers." />
+    <meta property="og:url" content="https://<ton-domaine>" />
+    <meta property="og:image" content="https://<ton-domaine>/static/og-fluid.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind -->
+
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="
+https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <nav id="desktop" class="hidden lg:flex items-center px-12">
+            <img src="./assets/logo.webp" alt="Logo de notre marque Fluid" class="w-32 relative bottom-5">
+            <div class="flex mx-auto">
+
+                <ul class="flex gap-24 mb-10 mx-auto text-xl font-sora">
+                    <li><a href="#home" class="text-sky-500">Accueil</a></li>
+                    <li><a href="./tarif.html">Tarif</a></li>
+                    <li><a href="./contact.html">Contactez-nous</a></li>
+            </div>
+            <a href="#clientspace" class="rounded-lg bg-sky shadow text-white p-2 text-2xl mb-8 text-left">
+                Espace Client
+            </a>
+        </nav>
+
+
+        <nav id="mobile" class="flex lg:hidden justify-between items-center px-4">
+            <img src="./assets/logo.webp" alt="Logo de notre marque" class="w-48 relative mx-auto bottom-12">
+
+            <!-- Icône burger -->
+            <i id="burger" class="material-icons relative bottom-12 mr-5 cursor-pointer"
+                style="font-size: 2rem;">menu</i>
+        </nav>
+
+        <!-- Menu mobile caché par défaut -->
+        <div id="mobileMenu"
+            class="hidden text-marine text-2xl pb-2 flex flex-col items-center gap-4 relative bottom-24 lg:hidden">
+            <a href="#home">Accueil</a>
+            <a href="./tarif.html">Tarif</a>
+            <a href="./contact.html">Contactez-nous</a>
+            <a href="#clientspace" class="bg-sky text-black w-48 text-center p-2 rounded">Espace Client</a>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <section class="entetepage flex flex-col lg:flex-row items-center justify-between px-6 py-12 gap-8">
+            <h2>MDR OUI C4EST MOI</h2>
+            <!-- Texte à gauche -->
+            <div class="lg:w-1/2 text-center text-marine lg:text-left lg:mb-47 lg:ml-12">
+                <h2 class="text-3xl lg:text-5xl font-montserrat leading-tight mb-6">
+                    Sites <span class="text-sky">web</span> sur‑mesure,<br />
+                    faits main au meilleur prix.
+                </h2>
+                <p class="text-lg text-gray-600 font-montserrat">
+                    Penses pour les PME et les particuliers, nos sites sont développes par un vrai dev, entièrement à la
+                    main.
+                </p>
+
+                <button type="button"
+                    class="bg-sky rounded-xl text-xl nosservice text-white px-4 py-3 mt-8 lg:mt-12 lg:mx-0 mx-auto block">
+                    Voir nos services
+                </button>
+
+            </div>
+
+            <!-- Image à droite -->
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="./assets/Data extraction.gif" alt="Illustration Data extraction"
+                    class="w-full max-w-md object-contain" />
+            </div>
+
+        </section>
+
+        <section class="deuxiemepage flex flex-col lg:flex-row items-center justify-between px-6 py-12 gap-8">
+
+            <div class="lg:w-1/2 flex justify-center hidden lg:flex">
+                <img src="./assets/Pair programming-rafiki.svg" alt="Illustration Data extraction"
+                    class="w-full max-w-md lg:mb-24 object-contain" />
+            </div>
+
+            <div class="lg:w-1/2 text-center text-marine lg:text-left lg:mb-47 lg:ml-12">
+                <h2 class="text-3xl lg:text-5xl font-montserrat leading-tight mb-6">
+                    Un vrai <span class="text-sky">développeur</span>, pas un builder.
+                </h2>
+
+                <p class="text-lg text-gray-600 font-montserrat">
+                    Penses pour les PME et les particuliers, nos sites sont développes par un vrai dev, entièrement à la
+                    main.
+                </p>
+
+                <div class="icon">
+                    <div class="container flex-col lg:flex-row mt-12 lg:mt-5 flex items-center lg:flex">
+                        <span
+                            class="material-icons text-white cursor-pointer transform transition-transform duration-300 hover:scale-110 rounded-lg p-2 text-2xl lg:mt-5 bg-sky">bolt
+                        </span>
+                        <h2 class="text-xl lg:pt-3 pl-2 lg:pl-2">Rapide</h2>
+                        <br>
+                        <span
+                            class="material-icons lg:ml-12 cursor-pointer transform transition-transform duration-300 hover:scale-110 text-white rounded-lg p-2 text-xl lg:mt-5 bg-sky">
+                            handshake
+                        </span>
+                        <h2 class="text-xl lg:pt-3 pb-5 lg:pb-0 lg:pl-2">SEO-Friendly</h2>
+                        <span
+                            class="material-icons lg:ml-12 cursor-pointer transform transition-transform duration-300 hover:scale-110 text-white rounded-lg p-2 text-xl lg:mt-5 bg-sky">
+                            accessibility
+                        </span>
+                        <h2 class="text-xl lg:pt-3 lg:pl-2">Accesibilité</h2>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center pt-5 lg:hidden">
+                    <img src="./assets/Pair programming-rafiki.svg" alt="Illustration Data extraction"
+                        class="w-full max-w-md lg:mb-24 object-contain" />
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="troispage flex flex-col lg:flex-row items-center justify-between px-6 py-12 gap-8">
+            <!-- Texte à gauche -->
+            <div class="lg:w-1/2 text-center text-marine lg:text-left lg:mb-47 lg:ml-12">
+                <h2 class="text-3xl lg:text-5xl font-montserrat leading-tight mb-6">
+                    Performance, <span class="text-sky">SEO,</span><br />
+                    Accesibilité.
+                </h2>
+                <p class="text-lg text-gray-600 font-montserrat">
+                    Optimisé pour les Performance, l'Accesibilité, et le référencement.
+                    Nous utilisions des hébergeur haut de gamme afin d'assuré le meilleur débit.
+                </p>
+
+                <button type="button"
+                    class="bg-sky rounded-xl text-xl nosservice text-white px-4 py-3 mt-8 lg:mt-12 lg:mx-0 mx-auto block">
+                    En savoir plus
+                </button>
+
+            </div>
+
+            <!-- Image à droite -->
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="./assets/Consent-rafiki.svg" alt="Illustration Data extraction"
+                    class="w-full max-w-md relative lg:bottom-32 object-contain" />
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+
+body {
+    background: #fafdfe;
+}
+
+.text-marine {
+    color: #0e121b;
+}
+
+.bg-lightc {
+    background: #fefffe;
+}
+
+.font-sora {
+    font-family: "Sora", sans-serif;
+}
+
+.font-monserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.nosservice {
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-family: "Sora", sans-serif;
+}
+
+.nosservice:hover {
+    background: #094db2;
+    transform: scale(1.08);
+}
+
+.text-sky {
+    color: #267cfe;
+}
+
+.bg-sky {
+    background: #267cfe;
+}
